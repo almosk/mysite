@@ -167,9 +167,9 @@ a {
   font-size: 22px;
 }
 
-#work1 {background-image: url(../img/works/1.png);}
-#work2 {background-image: url(../img/works/2.png);}
-#work3 {background-image: url(../img/works/3.png);}
+#work1 {background-image: url(../img/works/1.jpg);}
+#work2 {background-image: url(../img/works/2.jpg);}
+#work3 {background-image: url(../img/works/3.jpg);}
 #work4 {background-image: url(../img/works/4.jpg);}
 
 @media (max-width: 375px) {
