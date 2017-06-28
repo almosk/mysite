@@ -8,6 +8,11 @@
   font-family: T-StarPro-Medium;
 }
 
+@font-face {
+  src: url(../fonts/T-StarPro.otf);
+  font-family: T-StarPro;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -155,7 +160,7 @@ a {
 
 .text>h2 {
   margin-top: 20px;
-  font-family: T-StarProMedium;
+  font-family: T-StarPro;
   font-size: 32px;
   line-height: 36px;
 }
@@ -163,7 +168,7 @@ a {
 .text>p {
   position: absolute;
   bottom: 0;
-  font-family: T-StarProBold;
+  font-family: T-StarPro;
   font-size: 18px;
 }
 
@@ -171,6 +176,7 @@ a {
 #work2 {background-image: url(../img/works/2.jpg);}
 #work3 {background-image: url(../img/works/3.jpg);}
 #work4 {background-image: url(../img/works/4.jpg);}
+#work5 {background-image: url(../img/works/5.jpg);}
 
 @media (max-width: 375px) {
   h1 {
