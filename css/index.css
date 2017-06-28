@@ -1,0 +1,187 @@
+@font-face {
+  src: url(../fonts/T-StarPro-Bold.otf);
+  font-family: T-StarPro-Bold;
+}
+
+@font-face {
+  src: url(../fonts/T-StarPro-Medium.otf);
+  font-family: T-StarPro-Medium;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.body {
+  min-width: 1024px;
+}
+
+.firstPageWrapper {
+  width: 100vw;
+  min-width: 1024px;
+  height: auto;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+}
+
+.firstPage {
+  width: 960px;
+  position: relative;
+  color: white;
+
+  margin: 72px 113px;
+}
+
+.firstPage>h1 {
+  font-family: T-StarPro-Bold;
+  font-size: 76px;
+  line-height: 80px;
+
+  /*width: 960px;*/
+  position: relative;
+}
+
+.firstPage>p {
+  font-family: T-StarPro;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 16px;
+}
+
+.bottons {
+  width: 100%;
+  margin-top: 54px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.botton {
+  width: 140px;
+  height: 48px;
+  position: relative;
+  display: block;
+
+  margin-right: 20px;
+
+  font-size: 22px;
+  line-height: 48px;
+  text-align: center;
+  font-family: T-StarPro-Bold;
+
+  border: solid 1px white;
+}
+
+.botton:active {
+  background-color: lightgray;
+  transition: none;
+}
+
+.works {
+  min-width: 1024px;
+  height: auto;
+  background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.work {
+  width: 100%;
+  height: 400px;
+  position: relative;
+
+  padding: 45px;
+  margin-bottom: 55px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+.text {
+  width: 960px;
+  height: 360px;
+  position: relative;
+  opacity: 0;
+  transition: .4s ease;
+  color: white;
+}
+
+.work::before {
+  content: '';
+  position: absolute;
+  background-color: black;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: .4s ease;
+}
+
+.work:hover::before {
+  opacity: .7;
+}
+
+.work:hover>.text {
+  opacity: 1;
+}
+
+.text>h1 {
+  font-family: T-StarPro-Bold;
+  font-size: 56px;
+  line-height: 56px;
+}
+
+.text>h2 {
+  margin-top: 20px;
+  font-family: T-StarProMedium;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.text>p {
+  position: absolute;
+  bottom: 0;
+  font-family: T-StarProBold;
+  font-size: 22px;
+}
+
+#work1 {background-image: url(../img/works/1.png);}
+#work2 {background-image: url(../img/works/2.png);}
+#work3 {background-image: url(../img/works/3.png);}
+#work4 {background-image: url(../img/works/4.jpg);}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 70px;
+    line-height: 74px;
+  }
+
+  .botton {
+    width: 300px;
+    height: 70px;
+    font-size: 36px;
+    line-height: 70px;
+  }
+}
