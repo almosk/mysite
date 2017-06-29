@@ -23,14 +23,14 @@ a {
 }
 
 .body {
-  min-width: 1024px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .firstPageWrapper {
   width: 100vw;
-  min-width: 1024px;
   height: auto;
   min-height: 100vh;
+  position: relative;
 
   display: flex;
   justify-content: center;
@@ -94,7 +94,7 @@ a {
 }
 
 .works {
-  min-width: 1024px;
+  /*min-width: 1024px;*/
   height: auto;
   background-color: black;
 
@@ -109,11 +109,11 @@ a {
   height: 400px;
   position: relative;
 
-  padding: 45px;
+  /*padding: 45px;*/
   margin-bottom: 55px;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 
@@ -122,16 +122,6 @@ a {
   background-repeat: no-repeat;
 
   cursor: pointer;
-}
-
-.text {
-  width: 960px;
-  height: 360px;
-  position: relative;
-  opacity: 0;
-  transition: .4s ease;
-  color: white;
-  /*color: yellow;*/
 }
 
 .work::before {
@@ -153,10 +143,26 @@ a {
   opacity: 1;
 }
 
+.text {
+  width: auto;
+  height: 400px;
+  margin: 0 113px;
+  position: relative;
+  opacity: 0;
+  transition: .4s ease;
+  color: white;
+  /*color: yellow;*/
+}
+
+.text>* {
+  position: relative;
+}
+
 .text>h1 {
   font-family: T-StarPro-Bold;
   font-size: 56px;
   line-height: 56px;
+  margin-top: 45px;
 }
 
 .text>h2 {
@@ -168,7 +174,7 @@ a {
 
 .text>p {
   position: absolute;
-  bottom: 0;
+  bottom: 45px;
   font-family: T-StarPro;
   font-size: 18px;
 }
@@ -180,21 +186,16 @@ a {
 #work5 {background-image: url(../img/works/5.jpg);}
 #work6 {background-image: url(../img/works/6.jpg);}
 
-@media not screen and (max-width: 768px) {
+@media (max-device-width: 1024px) {
   .text {
-    margin-top: 400px;
-    margin-left: 72px;
+    margin-top: 435px;
+    /*margin-left: 72px;*/
     opacity: 1;
-    min-height: 310px;
   }
 
   .work {
-    margin-bottom: 430px;
-  }
-
-  .text>p {
-    position: relative;
-    margin-top: 30px;
+    margin-bottom: 440px;
+    display: block;
   }
 
   .work::before {
@@ -202,10 +203,10 @@ a {
   }
 }
 
-@media (max-width: 375px) {
-  h1 {
-    font-size: 70px;
-    line-height: 74px;
+@media (max-device-width: 375px) {
+  .firstPage>h1 {
+    font-size: 90px;
+    line-height: 94px;
   }
 
   .botton {
@@ -215,8 +216,8 @@ a {
     line-height: 70px;
   }
 
-  .firstPageWrapper {
-    min-width: 0;
+  .text>h2 {
+    font-size: 27px;
+    line-height: 32px;
   }
-
 }
