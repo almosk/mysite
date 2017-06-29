@@ -180,6 +180,27 @@ a {
 #work5 {background-image: url(../img/works/5.jpg);}
 #work6 {background-image: url(../img/works/6.jpg);}
 
+@media not screen and (max-width: 768px) {
+  .text {
+    margin-top: 400px;
+    margin-left: 72px;
+    opacity: 1;
+    min-height: 310px;
+  }
+
+  .work {
+    margin-bottom: 430px;
+  }
+
+  .text>p {
+    position: relative;
+    margin-top: 30px;
+  }
+
+  .work::before {
+    display: none;
+  }
+}
 
 @media (max-width: 375px) {
   h1 {
@@ -193,4 +214,9 @@ a {
     font-size: 36px;
     line-height: 70px;
   }
+
+  .firstPageWrapper {
+    min-width: 0;
+  }
+
 }
