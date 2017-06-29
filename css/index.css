@@ -131,6 +131,7 @@ a {
   opacity: 0;
   transition: .4s ease;
   color: white;
+  /*color: yellow;*/
 }
 
 .work::before {
@@ -177,6 +178,8 @@ a {
 #work3 {background-image: url(../img/works/3.jpg);}
 #work4 {background-image: url(../img/works/4.jpg);}
 #work5 {background-image: url(../img/works/5.jpg);}
+#work6 {background-image: url(../img/works/6.jpg);}
+
 
 @media (max-width: 375px) {
   h1 {
