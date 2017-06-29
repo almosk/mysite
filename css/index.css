@@ -23,7 +23,12 @@ a {
 }
 
 .body {
-  min-width: 1024px;
+  /*min-width: 1024px;*/
+}
+
+.global {
+  width: auto;
+  height: auto;
 }
 
 .firstPageWrapper {
@@ -31,6 +36,8 @@ a {
   min-width: 1024px;
   height: auto;
   min-height: 100vh;
+
+  position: relative;
 
   display: flex;
   justify-content: center;
@@ -94,9 +101,12 @@ a {
 }
 
 .works {
+  width: 100vw;
   min-width: 1024px;
   height: auto;
   background-color: black;
+
+  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -180,7 +190,7 @@ a {
 #work5 {background-image: url(../img/works/5.jpg);}
 #work6 {background-image: url(../img/works/6.jpg);}
 
-@media not screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .text {
     margin-top: 400px;
     margin-left: 72px;
@@ -202,7 +212,9 @@ a {
   }
 }
 
-@media (max-width: 375px) {
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)  {
   h1 {
     font-size: 70px;
     line-height: 74px;
@@ -216,7 +228,26 @@ a {
   }
 
   .firstPageWrapper {
-    min-width: 0;
+    width: 100vw;
+    height: 100vh;
+    min-width: 0px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
   }
 
+  /*.firstPage {
+    position: relative;
+    color: white;
+
+  }
+
+  .works {
+    min-width: 320px;
+  }*/
 }
