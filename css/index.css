@@ -190,6 +190,8 @@ h1>a {
 #work4 {background-image: url(../img/works/4.jpg);}
 #work5 {background-image: url(../img/works/5.jpg);}
 #work6 {background-image: url(../img/works/6.jpg);}
+#work7 {background-image: url(../img/works/7.jpg);}
+
 
 @media (max-device-width: 1024px) {
   .text {
