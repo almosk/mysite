@@ -3,80 +3,98 @@
   <head>
     <meta charset="utf-8">
     <title>Alexander Moskovskiy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://almosk.com">
+    <meta property="og:title" content="Alexander Moskovskiy">
+    <meta property="og:description" content="личный сайт">
+    <meta property="og:image" content="http://almosk.com/img/share.jpg">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media_375.css">
 
-    <link rel="apple-touch-icon"      sizes="57x57"    href="img/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon"      sizes="60x60"    href="img/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon"      sizes="72x72"    href="img/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon"      sizes="76x76"    href="img/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon"      sizes="114x114"  href="img/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon"      sizes="120x120"  href="img/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon"      sizes="144x144"  href="img/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon"      sizes="152x152"  href="img/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon"      sizes="180x180"  href="img/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32"    href="img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96"    href="img/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16"    href="img/icons/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-101848018-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main.js" charset="utf-8"></script>
   </head>
   <body>
-    <section class="firstPageWrapper">
-      <section class="firstPage">
-        <h1>Привет! Меня зовут Александр Московский.<br>
-            Я занимаюсь веб-дизайном и frontend-разработкой, графическим дизайном, делаю плакаты, рисую шрифты и фотографирую.</h1>
-        <section class="bottons">
-          <a target="_blank" href="https://www.facebook.com/av.mosk" class="botton">Facebook</a>
-          <!-- <a target="_blank" href="" class="botton">gmail</a> -->
-          <a target="_blank" href="https://www.instagram.com/a_mosk/" class="botton">Instagram</a>
-        </section>
-      </section>
-    </section>
+    <div class="header">
+      <a href="#"><h1 class="name">АЛЕКСАНДР МОСКОВСКИЙ</h1></a>
+      <div class="contacts"><h1><a href="mailto:av.mosk@gmail.com" class="botton">av.mosk@gmail.com</a> | <a target="_blank" href="https://www.facebook.com/av.mosk" class="botton">fb</a></h1></div>
+    </div>
 
-    <section class="works">
-      <a href="http://randomatizm.hack.exchange/" target="_blank" class="work" id="work1">
-        <div class="text">
-          <h1>RANDOMATIZM</h1>
-          <h2>Сайт позволяет с помощью алгоритма, <br>
-              основанного на случайных числах, <br>
-              изменять супрематические картины.
-          </h2>
-          <p>#frontend #веб-дизайн</p>
-        </div>
+    <h2 class="mainText">
+      <span class="gray">cейчас я</span>
+      делаю книжные обложки<br>
+      для МИФа, придумываю себе сайт, пишу текст<br>
+      для второй части лонгрида про спальные<br>
+      районы и делаю сайт про детей
+    </h2>
+
+    <section class="mainSection">
+
+      <a href="#" class="card" id="card9">
+        <img src="img/work9.jpg" alt="">
+        <h3>Обложки для издательства «МИФ»</h3>
+        <h4>графический дизайн</h4>
       </a>
 
-      <a href="http://portfolio.hse.ru/Project/20599" target="_blank" class="work" id="work2">
-        <div class="text">
-          <h1>Ребрендинг музея русской литературы</h1>
-          <h2>Гослит — крупнейший литературный музей страны,<br>
-              основанный в 1934 году. Он состоит из 12 отделений —<br>
-              домов и квартир-музеев российских писателей и поэтов.<br>
-          </h2>
-          <p>#брендинг</p>
-        </div>
+      <a href="http://1962.gluschenkoizdat.ru/" target="_blank" class="card vertical" id="card8">
+        <img src="img/work8.jpg" class="vertical" alt="">
+        <h3>Сайт с подкастами по дневникам Н.Козакова</h3>
+        <h4>графический дизайн</h4>
       </a>
 
-      <a href="https://almosk.github.io/Museum_of_Russian_literature/" target="_blank" class="work" id="work3">
-        <div class="text">
-          <h1>Сайт для музея<br>русской литературы</h1>
-          <h2>Новая версия сайта, созданная<br>
-              в рамках ребрендинга.
-          </h2>
-          <p>#frontend #веб-дизайн</p>
-        </div>
+      <a href="http://prhub.moscow/" target="_blank" class="card horizontal" id="card7">
+        <img src="img/work7.jpg" class="horizontal" alt="">
+        <h3>Агентство «PRHUB»</h3>
+        <h4>айдентика | веб-дизайн | разработка</h4>
       </a>
 
-      <a href="http://portfolio.hse.ru/Project/14911#" target="_blank" class="work" id="work4">
-        <div class="text">
-          <h1>Плакаты о литературе</h1>
-          <h2>Несколько серий плакатов,<br>
-              посвященных лекциям о русской литературе.
-            </h2>
-          <p>#плакаты #графдизайн</p>
-        </div>
+      <a href="https://readymag.com/almosk/mkr/" target="_blank" class="card horizontal" id="card6">
+        <img src="img/work6.jpg" class="horizontal" alt="">
+        <h3>Почему мы ненавидим спальные районы?</h3>
+        <h4>веб-дизайн | исследование</h4>
+      </a>
+
+      <a href="http://randomatizm.hack.exchange/" target="_blank" class="card vertical" id="card5">
+        <img src="img/work5.gif" class="vertical" alt="">
+        <h3>RANDOMATIZM – рандомный арт</h3>
+        <h4>веб-дизайн | front-end</h4>
+      </a>
+
+      <a href="http://portfolio.hse.ru/Project/20599" target="_blank" class="card horizontal col11" id="card4">
+        <img src="img/work4.jpg" class="horizontal col11" alt="">
+        <h3>Айдентика и сайт для «Музея русской литературы»</h3>
+        <h4>веб-дизайн | графический дизайн</h4>
+      </a>
+
+      <a href="http://portfolio.hse.ru/Project/19059" target="_blank" class="card vertical" id="card3">
+        <img src="img/work3.jpg" class="vertical" alt="">
+        <h3>Гид по выставке про литературу</h3>
+        <h4>веб-дизайн</h4>
+      </a>
+
+      <a href="http://portfolio.hse.ru/Project/14911" target="_blank" class="card horizontal" id="card2">
+        <img src="img/work2.jpg" class="horizontal" alt="">
+        <h3>Плакаты для лекций по литературе</h3>
+        <h4>графический дизайн</h4>
+      </a>
+
+      <a href="http://russianfonts.ru/fonts/dobrozrachniy/dobrozrachniy-typeface.html" target="_blank" class="card horizontal" id="card1">
+        <img src="img/work1.jpg" class="horizontal" alt="">
+        <h3>Доброзрачный via RussianFonts</h3>
+        <h4>шрифт</h4>
       </a>
     </section>
   </body>
