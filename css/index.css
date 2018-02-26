@@ -35,6 +35,8 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  z-index: 2;
 }
 
 .mainSection {
@@ -79,7 +81,7 @@ h2 {
   letter-spacing: 2px;
   line-height: 72px;
   text-align: center;
-  user-select: none; 
+  user-select: none;
 }
 
 h3 {
