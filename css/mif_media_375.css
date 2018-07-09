@@ -1,0 +1,50 @@
+@media (max-width: 375px) {
+
+  .mainSection {
+    margin: 36px auto 0;
+  }
+
+  .mainText {
+    width: 350px;
+  }
+
+  .halfWidth {
+    width: 220px;
+    height: auto;
+    margin: 0 auto 48px;
+    padding: 0;
+  }
+
+  .fullWidth {
+    margin-bottom: 64px;
+    width: 360px;
+    /* overflow-x: hidden; */
+  }
+
+  .privichki+.bookCaption {
+    margin-top: -30px;
+    margin-left: 70px;
+  }
+
+  .privichki {
+    width: 100%;
+    /* margin-left: -10%; */
+  }
+
+  .big, .small {
+    width: 220px;
+  }
+
+  .bookCaption {
+    margin-top: 8px;
+  }
+
+  .another {
+    height: 160px;
+  }
+
+  a:hover h3{
+    text-decoration: none;
+  }
+
+}

@@ -1,50 +1,73 @@
+.centerText {
+  text-align: center;
+  margin: auto;
+
+  margin-top: 48px;
+}
+
+a:hover h3{
+  text-decoration: underline;
+}
+
 .mainSection {
-  display: block;
-  width: 100vw;
-
-
-
-  /* margin-top: -300px; */
-  z-index: -1;
+  margin-top: 0;
+  /* width: 1102; */
 }
 
-.mainText {
-  z-index: 9;
+.centerText {
+  margin-top: 24px;
 }
 
-.contentWrapper {
+.fullWidth {
+  width: 100%;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.privichki {
+  width: 100%;
+}
+
+.privichki+.bookCaption {
+  margin-top: -180px;
+  margin-left: 220px;
+}
+
+.halfWidth {
+  width: 551px;
+  height: 633px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin: 60px 0;
+  padding: 0 78px;
+}
+
+.halfWidth img {
+  box-shadow: 2px 2px 12px 0 rgba(0,0,0,0.20);
+}
+
+.big {
+  width: 394px;
+}
+
+.small {
+  width: 314px;
+}
+
+.bookCaption {
+  margin-top: 24px;
+}
+
+.another {
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  margin-bottom: 48px;
 }
-
-.bookSection {
-  background-color: yellow;
-  width: 100%;
-  min-width: 1440px;
-  height: 800px;
-
-  margin: -200px 0;
-
-
-  z-index: -1;
-}
-
-.right {
-  clip-path: polygon(0 0, 100% 25%, 100% 75%, 0% 100%);
-  background-color: yellow;
-}
-
-.left {
-  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 75%);
-  background-color: red;
-
-}
-
-/* svg {
-  width: 100%;
-  height: 900px;
-
-  margin-top: -300px
-
-} */

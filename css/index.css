@@ -57,6 +57,8 @@ a {
   width: 1180px;
   margin: auto;
   margin-top: 200px;
+
+  text-align: center;
 }
 
 .gray {
@@ -144,8 +146,7 @@ h4 {
   /* margin-bottom: 39px; */
 }
 
-#card9 {margin-top: 0;}
-#card9>img {width: 1180px;}
+
 
 #card3 img {
   box-shadow: 2px 2px 12px 0 rgba(0,0,0,0);
