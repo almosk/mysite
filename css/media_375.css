@@ -63,8 +63,9 @@
     /* margin-bottom: 39px; */
   }
 
-  #card9 {margin-top: 0;}
-  #card9>img {width: 350px;}
+  /* #card9 {margin-top: 0;} */
+  /* #card9>img {width: 350px;} */
+  #card9 {margin-left: 90px;}
 
   #card1 {margin: 60px calc((100% - 307px) / 2);}
   /* #card2 {margin-left: ;} */
